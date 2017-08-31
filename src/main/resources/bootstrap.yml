@@ -1,0 +1,14 @@
+info:
+  component: Global Debitum config server
+server:
+  port: 8888
+spring:
+    application:
+      name: config-server
+
+eureka:
+    client:
+        registerWithEureka: false
+        fetchRegistry: false
+        server:
+            waitTimeInMsWhenSyncEmpty: 0

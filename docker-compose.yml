@@ -1,0 +1,9 @@
+config-server-service:
+  container_name: config-server-service
+  log_driver: "json-file"
+  build: .
+  log_opt:
+    max-size: "20m"
+    max-file: "10"
+  ports:
+   - "8888:8888"
